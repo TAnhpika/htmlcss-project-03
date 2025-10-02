@@ -37,7 +37,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header fixed">
         <div class="container">
             <!-- Header top -->
             <div class="header-top">
@@ -56,16 +56,16 @@
                 <nav class="navbar">
                     <ul class="navbar__list">
                         <li class="navbar__item">
-                            <a href="" class="navbar__link navbar__item--active">Home</a>
+                            <a href="#" class="navbar__link navbar__item--active">Home</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__link">Services</a>
+                            <a href="#services" class="navbar__link">Services</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__link">About</a>
+                            <a href="#about" class="navbar__link">About</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__link">Doctors</a>
+                            <a href="#member" class="navbar__link">Doctors</a>
                         </li>
                     </ul>
                 </nav>
@@ -75,36 +75,38 @@
                     <a href="#!" class="header-action__login">Log In</a>
                     <button href="#!" class="btn header-action__signup">Sign Up</button> <!-- Use same class action__btn will make btn less priority -->
                 </div>
-
-
-            </div>
-
-            <!-- Hero -->
-            <section class="hero">
-                <!-- Hero content -->
-                <section class="hero__content">
-                    <div class="hero__heading">Exceptional dental care for all ages.</div>
-                    <div class="hero_desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</div>
-                    <div class="hero__row">
-                        <a href="#!" class="btn">Book Online</a>
-                        <span class="hero__phone">or call (123) 456-7890</span>
-                    </div>
-                </section>
-    
-                <!-- Hero media -->
-                <div class="hero__media">
-                    <figure class="hero__images">
-                        <img src="./assets/img/hero-01.png" alt="" class="hero__img">
-                        <img src="./assets/img/hero-02.png" alt="" class="hero__img">
-                    </figure>
-                </div>
-            </section>
+            </div>  
         </div>
     </header>
 
     <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- Hero content -->
+                    <section class="hero__content">
+                        <div class="hero__heading">Exceptional dental care for all ages.</div>
+                        <div class="hero_desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</div>
+                        <div class="hero__row">
+                            <a href="#!" class="btn">Book Online</a>
+                            <span class="hero__phone">or call (123) 456-7890</span>
+                        </div>
+                    </section>
+    
+                    <!-- Hero media -->
+                    <div class="hero__media">
+                        <figure class="hero__images">
+                            <img src="./assets/img/hero-01.png" alt="" class="hero__img">
+                            <img src="./assets/img/hero-02.png" alt="" class="hero__img">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
         <!-- Service -->
-        <section class="service">
+        <section id="services" class="service">
             <div class="container">
                 <h2 class="service__heading section-heading">Our services</h2>
                 <p class="service__desc section-desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</p>
@@ -165,7 +167,7 @@
         </section>
 
         <!-- Work -->
-        <section class="work">
+        <section id="about" class="work">
             <div class="container">
                 <h2 class="section-heading">How it works</h2>
                 <p class="section-desc work__desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</p>
@@ -219,7 +221,7 @@
         </section>
 
         <!-- Member -->
-        <section class="member">
+        <section id="member" class="member">
             <div class="container">
                 <header class="member__header">
                     <h2 class="section-heading">Our virtual dentist</h2>
@@ -262,8 +264,6 @@
                         <h3 class="member-item__name">Dr. Essence Page</h3>
                         <p class="member-item__title">DDS, California - Linda University</p>
                     </div>
-
-
                 </div>
 
                 <div class="member__control control">   

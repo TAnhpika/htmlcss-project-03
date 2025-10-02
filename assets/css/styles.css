@@ -6,6 +6,10 @@
     --header-bg: #10375C;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -98,9 +102,19 @@ input, textarea, select, button {
 }
 
 /* Header */
-.header {
-    padding-top: 30px;
-    min-height: 100vh;
+.header.fixed {
+    background: var(--header-bg);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding: 20px 0;
+}
+
+/* Header top */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: var(--header-bg);
 }
 
@@ -151,14 +165,6 @@ input, textarea, select, button {
     font-weight: 300;
 }
 
-/* Header top */
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 .navbar__list{
     display: flex;
 }
@@ -180,11 +186,6 @@ input, textarea, select, button {
     border-radius: 50%;
 }
 
-.header-action {
-    display: flex;
-    align-items: center;
-}
-
 .header-action__login,
 .navbar__link {
     padding: 4px 21px;
@@ -192,6 +193,11 @@ input, textarea, select, button {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75; 
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
 }
 
 .header-action__login {
@@ -205,9 +211,13 @@ input, textarea, select, button {
 
 /* Hero */
 .hero {
+    padding-top: 30px;
+    min-height: 100vh;
+    background: var(--header-bg);
+}
+.hero__inner {
     display: flex;
     align-items: center;
-    margin-top: 76px;
 }
 
 .hero__content {
@@ -321,8 +331,8 @@ input, textarea, select, button {
 }
 
 .service-item:hover .service-item__icon {
-    color: #2E80CE;
-    background: #FFFFFF;
+    color: #fff;
+    background: #2E80CE;
 }
 
 .service-item__icon {
@@ -410,6 +420,9 @@ input, textarea, select, button {
     line-height: 1.75; 
 }
 
+.work-item__more:hover {
+    font-weight: 600;
+}
 /* Feature */
 .feature {
     margin-top: 85px;
@@ -428,7 +441,7 @@ input, textarea, select, button {
 
 .feature__images {
     position: relative;
-    padding: 0 58px 121px 0; /*use padding + 0 position to avoid layers*/
+    padding: 0 58px 121px 0; /*use padding + r,b-0 position to avoid layers*/
 }
 
 .feature__img {
@@ -473,11 +486,6 @@ input, textarea, select, button {
     margin-top: 70px;
 }
 
-.member__control {
-    margin-top: 38px;
-    justify-content: center;
-}
-
 .member-item:hover .member-item__thumb {
     transform: scale(1.1);
 }
@@ -511,6 +519,10 @@ input, textarea, select, button {
     line-height: 1.86; 
 }
 
+.member__control {
+    margin-top: 38px;
+    justify-content: center;
+}
 /* Install */
 .install {
     margin-top: 180px;
