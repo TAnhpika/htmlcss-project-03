@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shine Smile</title>
 
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
@@ -81,12 +85,12 @@
 
     <main>
         <!-- Hero -->
-        <section class="hero">
+        <section class="hero" >
             <div class="container">
                 <div class="hero__inner">
                     <!-- Hero content -->
                     <section class="hero__content">
-                        <div class="hero__heading">Exceptional dental care for all ages.</div>
+                        <div class="hero__heading" data-aos="fade-up-left">Exceptional dental care for all ages.</div>
                         <div class="hero_desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</div>
                         <div class="hero__row">
                             <a href="#!" class="btn">Book Online</a>
@@ -112,7 +116,7 @@
                 <p class="service__desc section-desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</p>
                 <div class="service__row">
                     <figure>
-                        <img src="./assets/img/service-img.png" alt="" class="service__img">
+                        <img src="./assets/img/service-img.png" alt="" class="service__img" data-aos="flip-right">
                     </figure>
     
                     <div>
@@ -464,5 +468,12 @@
             </div>
         </div>
     </footer>
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

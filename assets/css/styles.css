@@ -105,9 +105,9 @@ input, textarea, select, button {
 .header.fixed {
     background: var(--header-bg);
     position: sticky;
-    top: 0;
+    top: -10px;
     z-index: 99;
-    padding: 20px 0;
+    padding: 20px 0 10px;
 }
 
 /* Header top */
